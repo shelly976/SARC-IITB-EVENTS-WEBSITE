@@ -11,7 +11,24 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
 from datetime import timedelta
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# <-- Load the .env file from your BASE_DIR
+load_dotenv(os.path.join(BASE_DIR, '.env'))
+
+# Now replace your hardcoded keys with os.environ.get()
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
+# Convert the string 'True'/'False' from .env to an actual Python Boolean
+DEBUG = os.environ.get('DEBUG') == 'True'
+
+# Add your Google credentials here so they are accessible globally in Django
+GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID')
 
 SIMPLE_JWT={
     "ACCESS_TOKEN_LIFETIME":timedelta(hours=1),
@@ -26,10 +43,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jhqaaeqlvh!ktf0oz!gwj5d2)c^)1ky0^kw)+2wu7l3zd6rf*#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = []
 

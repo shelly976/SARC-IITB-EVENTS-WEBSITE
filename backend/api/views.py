@@ -8,9 +8,11 @@ from rest_framework.permissions import IsAuthenticated,IsAdminUser
 from rest_framework import status
 from .serializers import UserSerializer,EventSerializer
 from .models import Event
+from django.conf import settings
+
 User=get_user_model()
 
-GOOGLE_CLIENT_ID='659913033019-0vrih6ajp9q170ku5lc6vvhabgj1mbgg.apps.googleusercontent.com'
+GOOGLE_CLIENT_ID=settings.GOOGLE_CLIENT_ID
 
 @api_view(['POST'])
 def google_login(request):
