@@ -1,0 +1,63 @@
+
+#ev:hover{
+    color: rgb(129, 209, 150);
+}
+
+#pello{
+    min-height: 1000px;
+    height: fit-content;
+    background-color:  #0f172a;
+    padding-top: 100px;
+}
+
+#delete{
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: rgb(240, 141, 116);
+}
+#update{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(234, 234, 160);
+    border-radius: 5px;
+}
+#shelly{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#update:hover{
+    background-color: rgb(219, 219, 21);
+}
+#delete:hover{
+    background-color: red;
+}
+
+#createevent{
+    position:fixed;
+    left:15px;
+    top:15px;
+    padding-bottom: 100px;
+}
+
+#createeventbutton{
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    border:none;
+    background-color: rgb(73, 214, 170);
+}
+#createeventbutton:hover{
+    background-color: rgb(59, 174, 59);
+}
+
+#evtss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:  #0f172a;
+    gap:30px;
+}

@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0f172a;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#top {
+  width: 350px;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  background: #1e293b;
+}
+
+#login {
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+#login h2 {
+  color: white;
+
+  margin: 0;
+}
+
+#Ldapid,
+#password {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  background: #334155;
+
+  color: white;
+}
+
+#Ldapid::placeholder,
+#password::placeholder {
+  color: #cbd5e1;
+}
+
+#button button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #38bdf8;
+
+  color: #0f172a;
+
+  font-size: 1rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}

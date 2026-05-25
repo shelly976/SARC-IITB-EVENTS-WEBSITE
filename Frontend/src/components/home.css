@@ -1,0 +1,132 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Whole page */
+body{
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    color:white;
+}
+
+/* Hero section */
+#hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:80px 70px;
+}
+
+/* Left text */
+#hero-text{
+    flex:1;
+}
+
+#hero-text h1{
+    font-size:3rem;
+    margin-bottom:25px;
+    color:white;
+}
+
+#hero-text p{
+    color:#cbd5e1;
+    font-size:1.05rem;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+/* Button */
+#hero-buttons{
+    margin-top:30px;
+}
+
+#explore-btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    color:#0f172a;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#explore-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(56,189,248,0.3);
+}
+
+/* Right image */
+#hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+#hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+    border:1px solid rgba(56,189,248,0.2);
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    height:250px;
+}
+
+/* Categories */
+#categories-section{
+    padding:20px 70px 60px;
+}
+
+#categories-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:white;
+    font-size:2rem;
+}
+
+/* Category cards */
+#categories{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.category{
+    padding:16px 24px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(56,189,248,0.15);
+    border-radius:12px;
+    color:#e2e8f0;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.category:hover{
+    background:#38bdf8;
+    color:#0f172a;
+    transform:translateY(-4px);
+}
+
+/* Mobile */
+@media(max-width:900px){
+    #hero{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 25px;
+    }
+
+    #hero-text h1{
+        font-size:2.2rem;
+    }
+
+    #hero-image img{
+        max-width:100%;
+    }
+}

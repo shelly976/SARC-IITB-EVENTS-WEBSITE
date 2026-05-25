@@ -1,0 +1,21 @@
+#change{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color:linear-gradient(135deg, #111827, #0f172a, #1e293b);
+}
+.links{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+    color:white;
+}
+#tello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#yes{
+    padding-top:20px;
+}

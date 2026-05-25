@@ -1,0 +1,11 @@
+#evts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+#helloo{
+    margin-top: 50px;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 80px;
+}

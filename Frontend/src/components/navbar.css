@@ -1,0 +1,168 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Navbar */
+#navbar{
+    width:100%;
+    height:85px;
+    padding:0 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(to right, #0f172a, #1e293b);
+    box-shadow:0 4px 20px rgba(0,0,0,0.15);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+/* Logo */
+#eventsphere h1{
+    color:#ffffff;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:1px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#eventsphere h1:hover{
+    color:#38bdf8;
+    transform:scale(1.05);
+}
+
+/* Navigation */
+ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+#home,
+#events,
+#about,
+#contact{
+    text-decoration:none;
+    color:#e2e8f0;
+    font-size:1rem;
+    font-weight:500;
+    position:relative;
+    transition:0.3s;
+}
+
+/* Hover line effect */
+#home::after,
+#events::after,
+#about::after,
+#contact::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#38bdf8;
+    transition:0.3s;
+}
+
+#home:hover,
+#events:hover,
+#about:hover,
+#contact:hover{
+    color:#38bdf8;
+}
+
+#home:hover::after,
+#events:hover::after,
+#about:hover::after,
+#contact:hover::after{
+    width:100%;
+}
+
+/* Buttons */
+#buttons{
+    display:flex;
+    gap:15px;
+}
+
+#login,
+#explore{
+    padding:10px 22px;
+    border:none;
+    border-radius:8px;
+    font-size:0.95rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Login */
+#login{
+    background:transparent;
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+}
+
+#login:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+/* Explore */
+#explore{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+#explore:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(56,189,248,0.35);
+}
+
+/* Mobile */
+@media(max-width:900px){
+    #navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    ul{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    #buttons{
+        width:100%;
+        justify-content:center;
+    }
+}
+
+#photo {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-right: 20px;
+}
+#helo{
+    margin-right:10px;
+}
+#image1 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: transform 0.2s ease;
+}
+
+#image1:hover {
+  transform: scale(1.08);
+}
